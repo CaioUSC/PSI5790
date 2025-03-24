@@ -7,9 +7,9 @@
 	for (int l=0; l<a.rows; l++)
 		for (int c=0; c<a.cols; c++){
 		if (p(l,c)>=limiar)
-			rectangle(d,Point(c,l),Point(c,l),Scalar(0.0,0.0,1.0),3);
+			circle(d,Point(c,l),0.5,Scalar(0,0,1),1);
 		if (pi(l,c)>=limiar)
-			rectangle(d,Point(c,l),Point(c,l),Scalar(0.0,0.0,1.0),3);	
+			circle(d,Point(c,l),0.5,Scalar(0,0,1),1);		
 		}
  return d;
  }
